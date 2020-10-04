@@ -1,6 +1,6 @@
 # Fire-Fighter
 
-A NASA Space Apps project which our team participated with.
+A NASA Space Apps project with which our team participated.
 
 Made by: (Team BB13)
   <br><br>Hadi Elnemr
