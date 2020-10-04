@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Arvo&display=swap">
+    <style>
+        .slider {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            height: 18px;
+            font-size: 16px;
+            overflow: hidden;
+            /* background-color: lightgrey; */
+        }
+
+        .slider div,
+        .slider div p {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider div {
+            animation: slide 10s 2s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                margin-top: 0;
+            }
+
+            25% {
+                margin-top: -18px;
+            }
+
+            50% {
+                margin-top: -36px;
+            }
+
+            75% {
+                margin-top: -54px;
+            }
+
+            100% {
+                margin-top: 0;
+            }
+        }
+
+        body {
+            background: #fff;
+            margin: 0;
+        }
+
+        .title {
+            color: rgb(212, 212, 212);
+            bottom: 70%;
+            position: absolute;
+            font-size: 3.5rem;
+            font-family: 'Arvo', serif;
+        }
+
+        button {
+            -webkit-appearance: none;
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+
+        svg {
+            padding: 0px;
+        }
+
+        .arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 83%;
+            margin-top: 0px;
+            margin-left: -35px;
+            width: 0px;
+            height: 0px;
+        }
+
+        .left {
+            left: 42%;
+        }
+
+        .right {
+            left: 57%;
+        }
+
+        .left:hover polyline,
+        .left:focus polyline {
+            stroke-width: 3;
+        }
+
+        .left:active polyline {
+            stroke-width: 6;
+            transition: all 100ms ease-in-out;
+        }
+
+        .right:hover polyline,
+        .right:focus polyline {
+            stroke-width: 3;
+        }
+
+        .right:active polyline {
+            stroke-width: 6;
+            transition: all 100ms ease-in-out;
+        }
+
+        polyline {
+            transition: all 250ms ease-in-out;
+        }
+
+        .wrapper {
+            background: url(https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80);
+            color: #eee;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            perspective: 1000px;
+            perspective-origin: 50% 50%;
+            animation: animation 100s linear infinite;
+        }
+
+        .p1 {
+            display: flex;
+            font-family: 'Antic Slab', serif;
+            font-size: 22px;
+            position: absolute;
+            top: 25%;
+            align-items: baseline;
+            margin: 20px;
+            /* left: 16px; */
+            color: white;
+            /* background-color: red; */
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            text-size-adjust: 50px;
+        }
+        .fires:hover{
+            font-style: italic;
+        }
+        .fires {
+            font-size: 35px;
+            position: absolute;
+            color: #eee;
+            font-family: 'Antic Slab', serif;
+            /* font-style:oblique; */
+            left: 43%;
+            /* display: flex; */
+            top: 82%;
+        }
+        P {
+            margin: 20px;
+        }
+    
+        header {
+            background-color: transparent;
+
+        }
+
+        @keyframes animation {
+            100% {
+                background-position: 0px -3000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Fire Fighter</h1>
+        <div class="slider">
+            <div>
+                <p>Hadi El Nemr</p>
+                <p>Mina Ezzat</p>
+                <p>Mohammad Omar</p>
+                <p><b>Path Finders &#169</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="p1">
+        <P>In the United States, an average of 69,020 wildfires (about 85% of which are human-caused,
+            according to the National Park Service) burn an average of 6.63 million acres each year, based on data from
+            the past 10-years compiled by the National Interagency
+            Fire Center (NIFC). </P>
+        <P> Along with the loss of life, the financial impact of these fires is immense. Insured losses from just the
+            Mendocino Complex Fire and the Carr
+            Fire, both of which broke out in July 2018 in California, were more than $845 million, and the fires damaged
+            or destroyed 8,900 homes, 329 businesses, and 800
+            private autos, commercial vehicles, and other types of property, according to figures from the California
+            Department of Insurance.</P>
+        A global look tells a more complete picture. Between July 15 and 22, 2019, Global Forest Watch Fires, an online
+        platform that monitors and responds to forest and
+        land fires, sent out 782,366 worldwide Fire Alerts via email. A majority of alerts over this seven-day period
+        were sent to subscribers in Russia (178,484),
+        the Democratic Republic of the Congo (136,087), Angola (109,512), and Zambia (52,801).
+        From the above, we decided to make a small project consisting of training a machine learning model to be able to
+        detect fires with a satisfying accuracy using satellites' data, then we visualize the areas where these fires
+        were detected on a map. </P>
+    </div>
+    <button class="arrow right" onclick="window.location.href='test.html'"> 
+    
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="30px"
+            viewBox="0 0 50 80" xml:space="preserve">
+            <polyline fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"
+                points="
+          0.375,0.375 45.63,38.087 0.375,75.8 " />
+        </svg>
+    </button>
+    <a class = "fires" href = "locate.html">locate fires</a>
+
+</body>
+
+</html>
