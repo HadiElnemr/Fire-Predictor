@@ -1,6 +1,6 @@
 # Fire-Fighter
 
-A NASA Space Apps project with which our team participated.
+A fire detection project which we made to participate in NASA Space Apps 2020 competition (Cairo).
 
 # Made by: (Team BB13)
 
