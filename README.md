@@ -1,8 +1,9 @@
 # Fire-Fighter
 
 A fire detection project which we made to participate in NASA Space Apps 2020 competition (Cairo).
+<br>You can see our project on the [NASA Space Apps](https://2020.spaceappschallenge.org/challenges/inform/automated-detection-hazards/teams/pathfinders-1/project) site.
 
-# Made by: (Team BB13)
+# Made by: (Team: Pathfinders, Code: BB13)
 <br>[Hadi Elnemr](https://github.com/HadiElnemr/)
 <br> [Mina Ezzat Wahba](https://github.com/minaezzat2000)
 <br>[Mohammad Omar Taha](https://github.com/mohammadomar17)
