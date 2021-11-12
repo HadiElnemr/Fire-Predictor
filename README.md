@@ -6,7 +6,7 @@ A fire detection project which we made to participate in NASA Space Apps 2020 co
 # Made by: (Team: Pathfinders, Code: BB13)
 <br>[Hadi Elnemr](https://github.com/HadiElnemr/)
 <br> [Mina Ezzat Wahba](https://github.com/minaezzat2000)
-<br>[Mohammad Omar Taha](https://github.com/mohammadomar17)
+<br>[Mohammad Omar Taha](https://github.com/MohammadOTaha)
 
 # Run
 
